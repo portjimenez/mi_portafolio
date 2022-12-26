@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi trabajo</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"></head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="tarjetas.css">
+    <%- include('partials/head') %>
+</head>
+<body>
+  <%- include('partials/nav') %>
+  
+  <section class="dark">
+    <div class="container py-4">
+      <h1 class="h1 text-center" id="pageHeaderTitle">conocé mis proyectos</h1>
+  
+      <article class="postcard dark blue">
+        <a class="postcard__img_link" href="http://fuentedevidaradio.net/">
+          <img class="postcard__img" src="proyectos/radio-1.png" alt="Image Title" />
+        </a>
+        <div class="postcard__text">
+          <h1 class="postcard__title blue"><a href="http://fuentedevidaradio.net/">Radio Fuente de Vida</a></h1>
+          <div class="postcard__subtitle small">
+            <time datetime="2020-05-25 12:00:00">
+              <i class="fas fa-calendar-alt mr-2"></i>Estación de radio
+            </time>
+          </div>
+          <div class="postcard__bar"></div>
+          <div class="postcard__preview-txt">Página que funciona como estación de radio para el colegio fuente de vida, proyecto desarrollado con tecnologías como: PHP, JavaScript, CSS y HTML, siendo yo encargado del back-end de la página.</div>
+          <ul class="postcard__tagbox">
+            <li class="tag__item play blue">
+              <a href="http://fuentedevidaradio.net/"><i class="fas fa-play mr-2"></i>Ver proyecto</a>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <article class="postcard dark red">
+        <a class="postcard__img_link" href="https://eterum.website/login/">
+          <img class="postcard__img" src="proyectos/login.png" alt="Image Title" />	
+        </a>
+        <div class="postcard__text">
+          <h1 class="postcard__title red"><a href="https://eterum.website/login/">Login</a></h1>
+          <div class="postcard__subtitle small">
+            <time datetime="2020-05-25 12:00:00">
+              <i class="fas fa-calendar-alt mr-2"></i>Registro
+            </time>
+          </div>
+          <div class="postcard__bar"></div>
+          <div class="postcard__preview-txt">Su funcionamiento es registrar en una base de datos a cada persona que ingrese a la página, si así lo desea. Esta página fue desarrollada con tecnologías como: PHP usando Laravel como framework, Blade, Shell y MySQL</div>
+          <ul class="postcard__tagbox">
+            <li class="tag__item play red">
+              <a href="https://eterum.website/login/"><i class="fas fa-play mr-2"></i>Ver proyecto</a>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <article class="postcard dark green">
+        <a class="postcard__img_link" href="https://eterum.website/ciberseguridad/">
+          <img class="postcard__img" src="proyectos/cibersegurida.jpg" alt="Image Title" />
+        </a>
+        <div class="postcard__text">
+          <h1 class="postcard__title green"><a href="https://eterum.website/ciberseguridad/">Página informativa</a></h1>
+          <div class="postcard__subtitle small">
+            <time datetime="2020-05-25 12:00:00">
+              <i class="fas fa-calendar-alt mr-2"></i>Proyecto Universitario
+            </time>
+          </div>
+          <div class="postcard__bar"></div>
+          <div class="postcard__preview-txt">Página que le brinda al usuario información sobre ciberseguridad y los tipos de amenazas que puede sufrir en la web. Esta página pertenece a un proyecto universitario del primer semestre de Ingeniería en sistemas que fue desarrollada en conjunto, además, fue desarrollada con tecnologías como: CSS, HTML5 y JavaScript.</div>
+          <ul class="postcard__tagbox">
+            <li class="tag__item play green">
+              <a href="https://eterum.website/ciberseguridad/"><i class="fas fa-play mr-2"></i>Ver Proyecto</a>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <article class="postcard dark yellow">
+        <a class="postcard__img_link" href="#">
+          <img class="postcard__img" src="proyectos/vilenes.png" alt="Image Title" />
+        </a>
+        <div class="postcard__text">
+          <h1 class="postcard__title yellow"><a href="#">Juego Web</a></h1>
+          <div class="postcard__subtitle small">
+            <time datetime="2020-05-25 12:00:00">
+              <i class="fas fa-calendar-alt mr-2"></i>Proyecto personal
+            </time>
+          </div>
+          <div class="postcard__bar"></div>
+          <div class="postcard__preview-txt">Proyecto en proceso, consta de un juego web que permitirá al usuario guardar su progreso y divertirse desde cualquier dispositivo y lugar donde desee, ya que no habrá necesidad de instalación. Este proyecto está siendo creado con tecnologías como lo es JavaScript, PHP y MySQL.</div>
+          <ul class="postcard__tagbox">
+            <li class="tag__item play yellow">
+              <a href="#" onclick="Desarrollo(1)"><i class="fas fa-play mr-2"></i>En Desarrollo...</a>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+  <%- include('partials/javascrip') %>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/enDesarrollo.js"></script>
+</body>
+</html>
